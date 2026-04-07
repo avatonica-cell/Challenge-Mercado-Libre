@@ -41,17 +41,17 @@ Con un desbalance de 2.8:1, SMOTE no aportó mejora significativa respecto a
 class_weight, que resultó más simple, más rápido e igual de efectivo.
 
 
-🛡️ Análisis de Vulnerabilidades (CVE) con Web Scraping & Looker Studio
+# 🛡️ Análisis de Vulnerabilidades (CVE) con Web Scraping & Looker Studio
 Este proyecto forma parte de una prueba técnica de Data Science orientada a ciberseguridad. El objetivo es recolectar, procesar y visualizar vulnerabilidades recientes (CVE) para identificar tendencias críticas de seguridad en diferentes fabricantes y tecnologías.
 
-📁 Estructura
+## 📁 Estructura
 Ejercicio-2.ipynb — Notebook con el proceso de Web Scraping, limpieza y exportación.
 
 vulnerabilidades_cve.csv — Dataset generado con los datos de los últimos 3 meses.
 
-Dashboard Interactivo — [Enlace a tu tablero de Looker Studio] (Sustituí con tu link).
+Dashboard Interactivo — https://lookerstudio.google.com/s/pXkvU9dY7iA
 
-🕷️ Parte A — Web Scraping & Data Cleaning
+## 🕷️ Parte A — Web Scraping & Data Cleaning
 Se desarrolló un scraper en Python (utilizando BeautifulSoup/Selenium) para extraer información de CVEDetails.
 
 Alcance: Vulnerabilidades publicadas en los últimos 3 meses.
@@ -64,7 +64,7 @@ Normalización de Fechas: Se transformó el formato de texto de origen a ISO 860
 
 Enriquecimiento: Se creó una columna de Categoría de Vulnerabilidad simplificada para mejorar la legibilidad de los reportes.
 
-📊 Parte B — Dashboard de Ciberseguridad
+## 📊 Parte B — Dashboard de Ciberseguridad
 Se construyó un tablero interactivo en Looker Studio para transformar los datos crudos en insights accionables.
 
 Metodología de Visualización
@@ -76,7 +76,7 @@ Crítico (9.0 - 10.0) | Alto (7.0 - 8.9) | Medio (4.0 - 6.9) | Bajo (0.1 - 3.9).
 
 Interactividad: El dashboard incluye filtros dinámicos por Fecha y Vendor, permitiendo realizar drill-down sobre fabricantes específicos (ej. Microsoft, Linux, Google).
 
-💡 Insights de Seguridad Detectados
+##💡 Insights de Seguridad Detectados
 Concentración de Riesgo: La categoría de "Ejecución remota" presenta el Score promedio más alto (8.48), lo que indica que, aunque no sea la más frecuente, es la que requiere atención inmediata.
 
 Volumen vs. Gravedad: Se observó que las vulnerabilidades de tipo "Inyección" son las más recurrentes, representando el volumen principal de casos reportados en el trimestre analizado.
