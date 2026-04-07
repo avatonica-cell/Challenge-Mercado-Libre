@@ -31,9 +31,9 @@ via **Optuna** (búsqueda bayesiana):
 
 | Modelo | F1 | ROC-AUC | PR-AUC | Recall anomalías |
 |---|---|---|---|---|
-| Random Forest + class_weight | 0.92 | 0.971 | 0.959 | 85.5% |
-| LightGBM + class_weight | 0.93 | 0.970 | 0.958 | 87.5% |
-| LightGBM + SMOTE | 0.93 | 0.971 | 0.958 | 87.5% |
+| Random Forest + class_weight | 0.92 | 0.971 | 0.959 | 86% |
+| LightGBM + class_weight | 0.93 | 0.970 | 0.958 | 88% |
+| LightGBM + SMOTE | 0.93 | 0.971 | 0.958 | 88% |
 
 **Modelo seleccionado: LightGBM con class_weight='balanced'**
 
@@ -52,7 +52,7 @@ vulnerabilidades_cve.csv — Dataset generado con los datos de los últimos 3 me
 Dashboard Interactivo — https://lookerstudio.google.com/s/pXkvU9dY7iA
 
 ## 🕷️ Parte A — Web Scraping & Data Cleaning
-Se desarrolló un scraper en Python (utilizando BeautifulSoup/Selenium) para extraer información de CVEDetails.
+Se desarrolló un scraper en Python para extraer información de CVEDetails.
 
 - Alcance: Vulnerabilidades publicadas en los últimos 3 meses.
 
